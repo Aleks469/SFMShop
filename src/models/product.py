@@ -32,10 +32,11 @@ class Product:
         return self.price * self.quantity
 
     def check_stock(self):
-        pass
+        return f'В данный момент у нас есть такое количество товара {self.quantity}'
 
-    def update_stock(self):
-        pass
+    def update_stock(self,stock):
+        if self.quantity > stock:
+            self.quantity -=stock
 
 
 
