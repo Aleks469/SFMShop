@@ -31,5 +31,12 @@ class Product:
     def get_total_price(self):
         return self.price * self.quantity
 
+    def check_stock(self):
+        pass
+
+    def update_stock(self):
+        pass
+
+
 
 
