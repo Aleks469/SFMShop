@@ -15,3 +15,5 @@ class User:
         if '@' not in email:
             raise ValidationError("Неверный формат email")
         self._email = email
+
+# Проверяем что в email есть @
