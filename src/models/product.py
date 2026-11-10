@@ -29,7 +29,7 @@ class Product:
         self.price = price
 
     def get_total_price(self):
-        return self.price * self.quantity
+        return self.price * (self.quantity - 2)
 
 
 
