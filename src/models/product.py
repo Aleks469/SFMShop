@@ -41,6 +41,11 @@ class Product:
     def apply_discount(self):
         pass
 
+    def calculate_shipping(self,amount):
+        if amount > 0:
+            self.price += amount
+
+
 product = Product('Ноутбук',20000,10)
 print(product.check_stock())
 product.update_stock(3)
