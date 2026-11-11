@@ -38,6 +38,9 @@ class Product:
         if self.quantity > stock:
             self.quantity -=stock
 
+    def apply_discount(self):
+        pass
+
 product = Product('Ноутбук',20000,10)
 print(product.check_stock())
 product.update_stock(3)
