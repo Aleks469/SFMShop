@@ -29,7 +29,8 @@ class Product:
         self.price = price
 
     def get_total_price(self):
-        return self.price * self.quantity * 0.9
+        return round(self.price * self.quantity * 0.9,2)
+
 
     def check_stock(self):
         return f'В данный момент у нас есть такое количество товара {self.quantity}'
