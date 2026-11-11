@@ -38,14 +38,15 @@ class Product:
         if self.quantity > stock:
             self.quantity -=stock
 
-    def apply_discount(self):
-        pass
-
     def calculate_shipping(self,amount):
         if amount > 0:
             self.price += amount
 
 
+    def get_category(self,product):
+        if isinstance(product,Product):
+            return True
+        return False
 product = Product('Ноутбук',20000,10)
 print(product.check_stock())
 product.update_stock(3)
