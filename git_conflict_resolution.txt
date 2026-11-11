@@ -1,0 +1,22 @@
+commit cf8acb5f45fe6958010da9fbdfd29821122bb434
+Merge: 2e8b12d a25ecab
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Wed Nov 11 18:36:36 2026 +0300
+
+    Разрешён конфликт в get_total_price: скидка + округление
+
+diff --cc src/models/product.py
+index de144ef,2630525..ea1f4ff
+--- a/src/models/product.py
++++ b/src/models/product.py
+@@@ -29,7 -29,7 +29,8 @@@ class Product
+          self.price = price
+  
+      def get_total_price(self):
+-         return self.price * self.quantity * 0.9
+ -        return round(self.price * self.quantity,2)
+++        return round(self.price * self.quantity * 0.9,2)
+++
+  
+      def check_stock(self):
+          return f'В данный момент у нас есть такое количество товара {self.quantity}'

@@ -1,0 +1,25 @@
+* 0a5cff6 Изменен .gitignore в SFMShop
+| * e8a3e0d Добавлен файл .gitignore
+|/  
+| *   0f643f6 Добавлены методы calculate_shipping и get_category в Product
+| |\  
+| |/  
+|/|   
+* | 879894e Добавлен метод get_category в Product
+| * 15b537a Добавлен метод calculate_shipping в Product
+| * 7d6d46d Добавлен метод apply_discount в Product
+|/  
+* 2756b7e Добавлен метод get_name в User
+* c780121 Добавлен .gitignore для проекта SFMShop
+*   add5424 Разрешен конфликт в get_total_price
+|\  
+| * a9fb1f5 Изменен метод get_total_price в feature/test-conflict
+| * c061f54 Добавлены методы управления складом в класс Product
+| * e6728a6 Добавлены методы управления в класс Product
+| * 40dbad7 Добавлена валидация в класс User
+* | 0e636a6 Изменен метод get_total_price в main
+|/  
+| * 8b96768 Добавлена система скидок в класс Product
+|/  
+* 8ec982b Добавлены модели SFMShop
+* accf6ef Добавлен базовый код SFMShop

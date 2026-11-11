@@ -1,0 +1,16 @@
+{
+  "user": "Иван Петров",
+  "products": [
+    {
+      "name": "Ноутбук",
+      "price": 60000,
+      "quantity": 1
+    },
+    {
+      "name": "Мышь",
+      "price": 1500,
+      "quantity": 2
+    }
+  ],
+  "total": 63000
+}

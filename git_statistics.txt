@@ -1,0 +1,126 @@
+commit 0a5cff6bbce0ef1d41ae8211b51010c1359a92d2
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Wed Nov 11 16:40:50 2026 +0300
+
+    Изменен .gitignore в SFMShop
+
+ .gitignore | 26 ++++++++++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+
+commit 879894e670a28c75005d03ae16663212c00a7c1c
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Wed Nov 11 15:16:04 2026 +0300
+
+    Добавлен метод get_category в Product
+
+ src/models/product.py | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 2756b7e77befd8a06dd14d92b6d1da1a39be5f8e
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Wed Nov 11 14:58:17 2026 +0300
+
+    Добавлен метод get_name в User
+
+ src/models/user.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit c780121d29f806081e7252c304b8fc635f18822f
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Wed Nov 11 14:53:10 2026 +0300
+
+    Добавлен .gitignore для проекта SFMShop
+
+ .gitignore | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit add54244d6ae3b2a18f34a061c0d9dd8cdd9669a
+Merge: 0e636a6 a9fb1f5
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Tue Nov 10 09:35:52 2026 +0300
+
+    Разрешен конфликт в get_total_price
+
+commit 0e636a69d7a741efeda3ceadc3a9e4663eaec21c
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Tue Nov 10 09:30:04 2026 +0300
+
+    Изменен метод get_total_price в main
+
+ src/models/product.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit a9fb1f59900d2c59044d9204d2802668b7b8b3b3
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Tue Nov 10 09:28:18 2026 +0300
+
+    Изменен метод get_total_price в feature/test-conflict
+    
+    git status
+
+ src/models/product.py | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit c061f548c4c5cb73457e7d8b6c54079a9ce4f5a1
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Mon Nov 9 19:08:11 2026 +0300
+
+    Добавлены методы управления складом в класс Product
+
+ src/models/product.py | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+commit e6728a6fd301a63a93fee133cb603987d78c7113
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Mon Nov 9 18:57:09 2026 +0300
+
+    Добавлены методы управления в класс Product
+
+ src/models/product.py | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+commit 40dbad77524435e5607ec369c85d095aa5a414e8
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Sun Nov 8 23:07:03 2026 +0300
+
+    Добавлена валидация в класс User
+
+ src/models/user.py | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 8ec982b0484d4bbc6360b16c5efbe38c4a46436a
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Thu Nov 5 00:09:05 2026 +0300
+
+    Добавлены модели SFMShop
+
+ src/models/__init__.py                            |   0
+ src/models/exceptions.py                          |  28 +++++++++++++++++
+ src/models/new.py                                 |  25 ++++++++++++++++
+ src/models/order.py                               |  21 +++++++++++++
+ src/models/payment.py                             |  27 +++++++++++++++++
+ src/models/product.py                             |  35 ++++++++++++++++++++++
+ src/models/user.py                                |  17 +++++++++++
+ 13 files changed, 153 insertions(+)
+
+commit accf6ef85bd9f33f4ab91f92ac5a6df253c4e38e
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Thu Nov 5 00:02:40 2026 +0300
+
+    Добавлен базовый код SFMShop
+
+ README.md                                          |    7 +
+ data/errors.log                                    |    1 +
+ data/orders.txt                                    |    4 +
+ data/ordes.json                                    |   16 +
+ data/processed_orders.txt                          |    2 +
+ data/processed_orders_report.txt                   |   14 +
+ data/products.txt                                  |    3 +
+ data/products_with_prices.txt                      |    3 +
+ src/main.py                                        | 1433 ++++++++++++++++++++
+ src/utils/OOP_test.py                              |    0
+ src/utils/__init__.py                              |    0
+ src/utils/calculations.py                          |   10 +
+ src/utils/order_processor.py                       |   72 +
+ src/utils/validators.py                            |   11 +
+ 18 files changed, 1576 insertions(+)

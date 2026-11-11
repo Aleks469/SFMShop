@@ -1,0 +1,16 @@
+Ветка  feature/add-logging
+# src/utils/logger.py
+def log(message):
+    print(f"[LOG] {message}")
+
+Ветка  feature/add-caching
+# src/utils/cache.py
+_cache = {}
+
+def get(key):
+    return _cache.get(key)
+
+def set(key, value):
+    _cache[key] = value
+
+Данные ветки не конфликтуют при слиянии в main, потому что они изменяют разные файлы.
