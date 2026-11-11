@@ -16,4 +16,7 @@ class User:
             raise ValidationError("Неверный формат email")
         self._email = email
 
+    def get_name(self):
+        return self.name
+
 # Проверяем что в email есть @
