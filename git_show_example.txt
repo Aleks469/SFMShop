@@ -1,0 +1,19 @@
+commit 5d4a80006f19cd2195050346e77a22a6bb1a1409
+Author: Александр Чуйко <sanya.chuiko.20@mail.ru>
+Date:   Wed Nov 11 18:21:07 2026 +0300
+
+    Изменен метод на первоначальный get_total_price в Product
+
+diff --git a/src/models/product.py b/src/models/product.py
+index af0ade5..a4ef131 100644
+--- a/src/models/product.py
++++ b/src/models/product.py
+@@ -29,7 +29,7 @@ class Product:
+         self.price = price
+ 
+     def get_total_price(self):
+-        return self.price * (self.quantity - 1)
++        return self.price * self.quantity
+ 
+     def check_stock(self):
+         return f'В данный момент у нас есть такое количество товара {self.quantity}'

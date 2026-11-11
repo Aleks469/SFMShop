@@ -1,0 +1,23 @@
+diff --git a/src/models/product.py b/src/models/product.py
+index ea1f4ff..af0ade5 100644
+--- a/src/models/product.py
++++ b/src/models/product.py
+@@ -29,8 +29,7 @@ class Product:
+         self.price = price
+ 
+     def get_total_price(self):
+-        return round(self.price * self.quantity * 0.9,2)
+-
++        return self.price * (self.quantity - 1)
+ 
+     def check_stock(self):
+         return f'В данный момент у нас есть такое количество товара {self.quantity}'
+diff --git a/src/utils/logger.py b/src/utils/logger.py
+new file mode 100644
+index 0000000..6eb1adc
+--- /dev/null
++++ b/src/utils/logger.py
+@@ -0,0 +1,2 @@
++def log(message):
++    print(f"[LOG] {message}")
+\ No newline at end of file
