@@ -48,6 +48,7 @@ def get_user_order_history(conn, user_id):
     cursor.close()
     return res
 
+
 def get_order_statistics(conn):
     cursor = conn.cursor()
     cursor.execute("""SELECT users.id,users.name, COUNT(orders.id) as order_count, COALESCE(SUM(orders.total), 0) as sum
